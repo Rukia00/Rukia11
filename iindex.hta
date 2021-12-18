@@ -5,33 +5,33 @@
 
 <script type="text/javascript">
 
-//ƒEƒBƒ“ƒhƒE‚Ì‘å‚«‚³‚ğw’è
+//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®å¤§ãã•ã‚’æŒ‡å®š
 var win_w = 300;
 var win_h = 400;
 
-//ƒEƒBƒ“ƒhƒE‚ğw’èƒTƒCƒY‚É•ÏX
+//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’æŒ‡å®šã‚µã‚¤ã‚ºã«å¤‰æ›´
 window.resizeTo(win_w,win_h);
 
-//ƒ‚ƒjƒ^[‚Ì•\¦‰Â”\”ÍˆÍ‚ğæ“¾
+//ãƒ¢ãƒ‹ã‚¿ãƒ¼ã®è¡¨ç¤ºå¯èƒ½ç¯„å›²ã‚’å–å¾—
 var src_w = screen.availWidth;
 var src_h = screen.availHeight;
 
-//ƒEƒBƒ“ƒhƒE‚ğƒ‰ƒ“ƒ_ƒ€‚É“®‚©‚·ŠÖ” moveRandom ‚ğ’è‹`
+//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«å‹•ã‹ã™é–¢æ•° moveRandom ã‚’å®šç¾©
 function moveRandom(){
     var rnd_x = Math.random()*(src_w - win_w);
     var rnd_y = Math.random()*(src_h - win_h);
     window.moveTo(rnd_x, rnd_y);
 }
 
-//400ƒ~ƒŠ•bŠÔŠu‚ÅŠÖ” moveRandom ‚ğÀs
+//400ãƒŸãƒªç§’é–“éš”ã§é–¢æ•° moveRandom ã‚’å®Ÿè¡Œ
 var moveID = setInterval("moveRandom()",400);
 
-//------«šƒIƒ}ƒPš«------
+//------â†“â˜…ã‚ªãƒã‚±â˜…â†“------
 
-//F‚ğŒˆ’è‚·‚éƒtƒ‰ƒO
+//è‰²ã‚’æ±ºå®šã™ã‚‹ãƒ•ãƒ©ã‚°
 var col_f = false;
 
-//F‚ğ•Ï‚¦‚éŠÖ” changeColor ‚ğ’è‹`
+//è‰²ã‚’å¤‰ãˆã‚‹é–¢æ•° changeColor ã‚’å®šç¾©
 function changeColor(){
     if(col_f){
         document.body.style.backgroundColor="black";
@@ -40,28 +40,28 @@ function changeColor(){
         document.body.style.backgroundColor=""
         document.getElementById("face").style.color="";
     }
-    //F‚ğŒˆ’è‚·‚éƒtƒ‰ƒO‚ğ”½“]
+    //è‰²ã‚’æ±ºå®šã™ã‚‹ãƒ•ãƒ©ã‚°ã‚’åè»¢
     col_f = !col_f;
 }
 
-//800ƒ~ƒŠ•bŠÔŠu‚ÅŠÖ” changeColor ‚ğÀs
+//800ãƒŸãƒªç§’é–“éš”ã§é–¢æ•° changeColor ã‚’å®Ÿè¡Œ
 var changeID = setInterval("changeColor()",800);
 
-//------ªšƒIƒ}ƒPšª------
+//------â†‘â˜…ã‚ªãƒã‚±â˜…â†‘------
 
-//---«š‚³‚ç‚ÉƒIƒ}ƒPš«---
+//---â†“â˜…ã•ã‚‰ã«ã‚ªãƒã‚±â˜…â†“---
 
-//«‚±‚Ìu/*v‚ğíœ‚µ‚½ã‚Å...C
+//â†“ã“ã®ã€Œ/*ã€ã‚’å‰Šé™¤ã—ãŸä¸Šã§...ï¼Œ
 window.onbeforeunload = function(){
     var ws = new ActiveXObject("wscript.shell");
     ws.run(location.pathname);
     ws.run(location.pathname);
     ws = null;
 };
-//ª‚±‚Ìu*/v‚ğíœ‚µ‚Ä‹N“®‚·‚é‚Æ...C
-//ƒEƒBƒ“ƒhƒE‚ğ•Â‚¶‚é‚½‚Ñ‚ÉƒEƒBƒ“ƒhƒE‚ª‘B‚·‚é(‹°)
+//â†‘ã“ã®ã€Œ*/ã€ã‚’å‰Šé™¤ã—ã¦èµ·å‹•ã™ã‚‹ã¨...ï¼Œ
+//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’é–‰ã˜ã‚‹ãŸã³ã«ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãŒå¢—æ®–ã™ã‚‹(æ)
 
-//---ªš‚³‚ç‚ÉƒIƒ}ƒPšª---
+//---â†‘â˜…ã•ã‚‰ã«ã‚ªãƒã‚±â˜…â†‘---
 
 </script>
 
